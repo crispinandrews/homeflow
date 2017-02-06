@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sonar</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse nav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <h1><%= link_to "Sonar", properties_path %></h1>
+        </div>
+      <ul class="nav navbar-nav navbar-right">
+      </ul>
+      </div>
+    </nav>
+
+    <div class="main">
+      <%= yield %>
+    </div>
+  </body>
+</html>

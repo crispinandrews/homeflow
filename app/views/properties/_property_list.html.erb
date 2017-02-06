@@ -1,0 +1,13 @@
+<% @search_results.each_with_index do |property| %>
+  <div class="property_<%= property['property_id'] %>">
+    <p>Price: <%= number_to_currency(property['price_value'], :unit => "£") %> </p> 
+    <p>Bedrooms: <%= property['bedrooms']%></p>
+    <p>Property Type:<%= property['property_type'].capitalize %></p>
+    <p><%= property['display_address']%></p>
+    <p><%= property['postcode']%></p>
+    <p><%= property['lat']%></p>
+    <p><%= property['lng']%></p>
+    <p>Description:<p>
+    <p><%= property['short_description']%></p>
+  </div>
+<%end%>
