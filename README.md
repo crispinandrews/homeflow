@@ -1,10 +1,10 @@
 # ABOUT / APPROACH
 
 Tech test for Homeflow
-Techs used: Ruby, Rails, Rspec
-Outline: To create a one page property search portal from the homeflow API data
-Time taken: 4hrs
-Uploaded on heroku: https://polar-refuge-95863.herokuapp.com/properties
+- Techs used: Ruby, Rails, Rspec
+- Outline: To create a one page property search portal from the homeflow API data
+- Time taken: 4hrs
+- Uploaded on heroku: https://polar-refuge-95863.herokuapp.com/properties
 
 To run:
 - on command line do: git clone https://github.com/crispinandrews/homeflow.git
