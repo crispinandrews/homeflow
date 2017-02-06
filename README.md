@@ -5,6 +5,9 @@ Tech test for Homeflow
 - Outline: To create a one page property search portal from the homeflow API data
 - Time taken: 4hrs
 - Uploaded on heroku: https://polar-refuge-95863.herokuapp.com/properties
+- Now getting push error with full Homeflow API implemented
+  - [!] There was an error while loading `homeflow_api.gemspec`: cannot load such file -- hashie/mash
+    remote:  Does it try to require a relative path? That's been removed in Ruby 1.9. Bundler cannot continue.
 
 To run:
 - on command line do: git clone https://github.com/crispinandrews/homeflow.git
@@ -13,9 +16,7 @@ To run:
 - bin/rake db:migrate
 - bin/rails s
 - visit http://localhost:3000/ in your browser
-    - Now getting push error with full Homeflow API implemented
-      - [!] There was an error while loading `homeflow_api.gemspec`: cannot load such file -- hashie/mash
-        remote:  Does it try to require a relative path? That's been removed in Ruby 1.9. Bundler cannot continue.
+
 
 ## What to do next:
 With more time I would like to have:
