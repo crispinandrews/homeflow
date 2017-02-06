@@ -6,15 +6,14 @@
   <%= form_tag(properties_path, :method => "get", id: "search-form") do %>
     <%= text_field_tag :price_value, params[:search], placeholder: "Max Price" %>
     <%= text_field_tag :bedrooms, params[:search], placeholder: "Bedrooms" %>
-    <%= text_field_tag :property_type, params[:search], placeholder: "Property Type" %>
     <%= submit_tag "Search" %>
   <% end %>
 </div>
 </div>
 
 <div class='col-sm-3 results'>
-    <h3>Results found: <%= @search_results.count%></h3>
-  <%= render "property_list"%>
+  <h3>Results found: <%= @search_results.count%></h3>
+  <%= render 'property_list'%>
 </div>
 
 <div class='col-sm-6 property_viewer'>

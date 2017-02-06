@@ -4,8 +4,7 @@ require 'envyable'
 
 class Property < ApplicationRecord
   def search
-    url = 'http://index1.homeflow.co.uk/properties/4631183?api_key=' + ENV['HOMEFLOW_API_KEY']
-    response = HTTParty.get(url)
-    data = JSON.parse(response.to_json)
+    data = Homeflow::API::Property.where(channel: "sales").results.properties
+    JSON.parse(data.to_json)
   end
 end
