@@ -15,7 +15,9 @@ private
     @search_keys = request.parameters
     @property_match_array = []
     (@property.keys & @search_keys.keys).each do |k|
-      if (("#{@property[k]}") == ("#{@search_keys[k]}")) || (("#{@property['price_value']}") <= ("#{@search_keys['price_value']}"))
+      if ("#{@property[k]}" == "#{@search_keys[k]}") || (@property['price_value'] <= @search_keys['price_value'].to_i)
+        puts @search_keys['price_value']
+        puts @property['price_value']
         @property_match_array.push(@property)
       end
     end
