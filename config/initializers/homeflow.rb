@@ -1,5 +1,6 @@
 require 'homeflow/api'
 require 'dry_ice'
+require 'json'
 
 Homeflow::API.configure do |config|
   config.api_key = ENV["HOMEFLOW_API_KEY"]

@@ -12,9 +12,10 @@ Tech test for Homeflow
 To run:
 - on command line do: git clone https://github.com/crispinandrews/homeflow.git
 - cd homeflow (change into file directory)
+- run bundle in case you're missing some gems
 - bin/rake db:create
 - bin/rake db:migrate
-- bin/rails s
+- bin/rails s - tho you will need to add an API key and an ENV file for this to work...
 - visit http://localhost:3000/ in your browser
 
 
