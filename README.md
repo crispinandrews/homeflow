@@ -16,7 +16,7 @@ To run:
 - run bundle in case you're missing some gems
 - bin/rake db:create
 - bin/rake db:migrate
-- bin/rails s - tho you will need to add an API key and an ENV file for this to work...
+- bin/rails s - tho you will need to add an API key and an ENV file for this to work or just add an API key to config/initializers/homeflow.rb
 - visit http://localhost:3000/ in your browser
 
 
