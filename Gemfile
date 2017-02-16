@@ -1,17 +1,11 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
 gem 'json'
 gem 'httparty'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'envyable'
 gem 'dry_ice', '0.1.1'
-gem 'homeflow_api', :git => 'git://github.com/homeflow/homeflow_api.git'
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'homeflow_api'
 gem 'rails', '~> 5.0.1'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
