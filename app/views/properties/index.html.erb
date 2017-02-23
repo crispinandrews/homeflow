@@ -1,6 +1,6 @@
 <div class="container">
 
-<div class='col-sm-3 search'>
+<div class='col-sm-2 search'>
   <div class='search_boxes'>
     <h3>SEARCH</h3>
   <%= form_tag(properties_path, :method => "get", id: "search-form") do %>
@@ -11,12 +11,12 @@
 </div>
 </div>
 
-<div class='col-sm-3 results'>
+<div class='col-sm-5 results'>
   <h3>Results found: <%= @search_results.count%></h3>
   <%= render 'property_list'%>
 </div>
 
-<div class='col-sm-6 property_viewer'>
+<div class='col-sm-5 property_viewer'>
   <h3>Full Property Description</h3>
 </div>
 

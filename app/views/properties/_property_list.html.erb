@@ -1,10 +1,13 @@
 <% @search_results.each do |property| %>
   <div class="property_<%= property['property_id'] %>">
+    <h4><%= property['display_address']%></h4>
+    <h5><%= property['postcode']%></h5>
+    <% property['photos'].each do |pic|%>
+      <%= image_tag("http://mr0.homeflow.co.uk/" + "#{pic}") %>
+    <% end %>
     <p>Price: <%= number_to_currency(property['price_value'], :unit => "£") %> </p>
     <p>Bedrooms: <%= property['bedrooms']%></p>
     <p>Property Type: <%= property['property_type'].capitalize %></p>
-    <p><%= property['display_address']%></p>
-    <p><%= property['postcode']%></p>
     <p><%= property['lat']%></p>
     <p><%= property['lng']%></p>
     <p>Description:<p>
